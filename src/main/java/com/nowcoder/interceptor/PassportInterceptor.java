@@ -54,6 +54,7 @@ public class PassportInterceptor implements HandlerInterceptor {
         return true;
     }
 
+    //modelAndView -> page
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
         if (modelAndView != null && hostHolder.getUser() != null) {
