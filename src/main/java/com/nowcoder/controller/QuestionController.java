@@ -1,6 +1,7 @@
 package com.nowcoder.controller;
 
 import com.nowcoder.model.*;
+import com.nowcoder.service.CommentService;
 import com.nowcoder.service.QuestionService;
 import com.nowcoder.service.UserService;
 import com.nowcoder.util.WendaUtil;
@@ -26,8 +27,8 @@ public class QuestionController {
     @Autowired
     QuestionService questionService;
 
-//    @Autowired
-//    CommentService commentService;
+    @Autowired
+    CommentService commentService;
 
     @Autowired
     HostHolder hostHolder;
@@ -35,22 +36,22 @@ public class QuestionController {
     @Autowired
     UserService userService;
 
-//    @RequestMapping(value = "/question/{qid}", method = {RequestMethod.GET})
-//    public String questionDetail(Model model, @PathVariable("qid") int qid) {
-//        Question question = questionService.getById(qid);
-//        model.addAttribute("question", question);
-//        List<Comment> commentList = commentService.getCommentsByEntity(qid, EntityType.ENTITY_QUESTION);
-//        List<ViewObject> vos = new ArrayList<>();
-//        for (Comment comment : commentList) {
-//            ViewObject vo = new ViewObject();
-//            vo.set("comment", comment);
-//            vo.set("user", userService.getUser(comment.getUserId()));
-//            vos.add(vo);
-//        }
-//        model.addAttribute("comments", vos);
-//
-//        return "detail";
-//    }
+    @RequestMapping(value = "/question/{qid}", method = {RequestMethod.GET})
+    public String questionDetail(Model model, @PathVariable("qid") int qid) {
+        Question question = questionService.getById(qid);
+        model.addAttribute("question", question);
+        List<Comment> commentList = commentService.getCommentsByEntity(qid, EntityType.ENTITY_QUESTION);
+        List<ViewObject> vos = new ArrayList<>();
+        for (Comment comment : commentList) {
+            ViewObject vo = new ViewObject();
+            vo.set("comment", comment);
+            vo.set("user", userService.getUser(comment.getUserId()));
+            vos.add(vo);
+        }
+        model.addAttribute("comments", vos);
+
+        return "detail";
+    }
 
     @RequestMapping(value = "/question/add", method = {RequestMethod.POST})
     @ResponseBody
