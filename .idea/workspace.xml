@@ -2,32 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e603fbcf-6b08-4eaf-8387-22e1147b9dfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/CommentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/MessageDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/EntityType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/MessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/QuestionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/QuestionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/QuestionDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/QuestionDAO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/toolbox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/toolbox.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/QuestionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/QuestionDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/QuestionDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/QuestionDAO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/toolbox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toolbox.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/CommentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/letter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/letter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/letterDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/letterDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/CommentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/CommentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/letter.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/letter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/letterDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/letterDetail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,20 +28,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1d2m26KccUs676rkO5byduS5i8Q" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Git\QA\src\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Git\QA\src\main\java\com\nowcoder\controller" />
+      <recent name="D:\Git\QA\src\main\java\com\nowcoder\service" />
+      <recent name="D:\Git\QA\src\main\java\com\nowcoder\util" />
       <recent name="D:\Git\QA\src\main\java\com\nowcoder\dao" />
       <recent name="D:\Git\QA\src\main\java\com\nowcoder\model" />
-      <recent name="D:\Git\QA\src\main\java\com\nowcoder\service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\QA\src\main\resources" />
+      <recent name="D:\Git\QA\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -67,7 +61,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WendaApplication">
+  <component name="RunManager" selected="Application.JedisAdapter">
+    <configuration name="JedisAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.util.JedisAdapter" />
+      <module name="wenda" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WendaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nowcoder.WendaApplication" />
       <module name="wenda" />
@@ -98,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JedisAdapter" />
         <item itemvalue="Application.WendaApplication" />
         <item itemvalue="JUnit.InitDatabaseTests" />
       </list>
