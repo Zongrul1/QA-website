@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e603fbcf-6b08-4eaf-8387-22e1147b9dfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/CommentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/letter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/letter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/letterDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/letterDetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/CommentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/CommentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/service/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/letter.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/letter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/letterDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/letterDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LikeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/util/WendaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/util/WendaUtil.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,19 +23,22 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\QA\src\main\java\com\nowcoder\controller" />
-      <recent name="D:\Git\QA\src\main\java\com\nowcoder\service" />
-      <recent name="D:\Git\QA\src\main\java\com\nowcoder\util" />
-      <recent name="D:\Git\QA\src\main\java\com\nowcoder\dao" />
-      <recent name="D:\Git\QA\src\main\java\com\nowcoder\model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\QA\src\main\resources" />
       <recent name="D:\Git\QA\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\QA\src\main\resources" />
+      <recent name="D:\Git\QA\src\main\java\com\nowcoder\util" />
+      <recent name="D:\Git\QA\src\main\java\com\nowcoder" />
+      <recent name="D:\Git\QA\src\main\java\com\nowcoder\controller" />
+      <recent name="D:\Git\QA\src\main\java\com\nowcoder\service" />
     </key>
   </component>
   <component name="RunDashboard">
