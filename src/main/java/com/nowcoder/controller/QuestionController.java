@@ -1,15 +1,11 @@
 package com.nowcoder.controller;
 
 import com.nowcoder.model.*;
-import com.nowcoder.service.CommentService;
-import com.nowcoder.service.LikeService;
-import com.nowcoder.service.QuestionService;
-import com.nowcoder.service.UserService;
+import com.nowcoder.service.*;
 import com.nowcoder.util.WendaUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by nowcoder on 2016/7/22.
@@ -29,13 +26,16 @@ public class QuestionController {
     QuestionService questionService;
 
     @Autowired
-    CommentService commentService;
-
-    @Autowired
     HostHolder hostHolder;
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    CommentService commentService;
+
+    @Autowired
+    FollowService followService;
 
     @Autowired
     LikeService likeService;
@@ -44,8 +44,9 @@ public class QuestionController {
     public String questionDetail(Model model, @PathVariable("qid") int qid) {
         Question question = questionService.getById(qid);
         model.addAttribute("question", question);
+
         List<Comment> commentList = commentService.getCommentsByEntity(qid, EntityType.ENTITY_QUESTION);
-        List<ViewObject> vos = new ArrayList<>();
+        List<ViewObject> comments = new ArrayList<ViewObject>();
         for (Comment comment : commentList) {
             ViewObject vo = new ViewObject();
             vo.set("comment", comment);
@@ -54,10 +55,34 @@ public class QuestionController {
             } else {
                 vo.set("liked", likeService.getLikeStatus(hostHolder.getUser().getId(), EntityType.ENTITY_COMMENT, comment.getId()));
             }
+
+            vo.set("likeCount", likeService.getLikeCount(EntityType.ENTITY_COMMENT, comment.getId()));
             vo.set("user", userService.getUser(comment.getUserId()));
-            vos.add(vo);
+            comments.add(vo);
         }
-        model.addAttribute("comments", vos);
+
+        model.addAttribute("comments", comments);
+
+        List<ViewObject> followUsers = new ArrayList<ViewObject>();
+        // 获取关注的用户信息
+        List<Integer> users = followService.getFollowers(EntityType.ENTITY_QUESTION, qid, 20);
+        for (Integer userId : users) {
+            ViewObject vo = new ViewObject();
+            User u = userService.getUser(userId);
+            if (u == null) {
+                continue;
+            }
+            vo.set("name", u.getName());
+            vo.set("headUrl", u.getHeadUrl());
+            vo.set("id", u.getId());
+            followUsers.add(vo);
+        }
+        model.addAttribute("followUsers", followUsers);
+        if (hostHolder.getUser() != null) {
+            model.addAttribute("followed", followService.isFollower(hostHolder.getUser().getId(), EntityType.ENTITY_QUESTION, qid));
+        } else {
+            model.addAttribute("followed", false);
+        }
 
         return "detail";
     }

@@ -1,8 +1,5 @@
 package com.nowcoder.controller;
 
-//import com.nowcoder.async.EventModel;
-//import com.nowcoder.async.EventProducer;
-//import com.nowcoder.async.EventType;
 import com.nowcoder.async.EventModel;
 import com.nowcoder.async.EventProducer;
 import com.nowcoder.async.EventType;
